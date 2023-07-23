@@ -1,0 +1,5 @@
+name: ItemEnchantRemover
+version: 1.0.0
+main: me.minosuko.itemenchantremover.ItemEnchantRemover
+author: Minosuko
+api: ["1.0.0"]
