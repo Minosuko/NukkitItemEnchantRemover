@@ -34,10 +34,10 @@ public class ItemEnchantRemoverCommand extends PluginCommand<ItemEnchantRemover>
 		Enchantment[] itemEnchant = item.getEnchantments();
 		for (int i = 0; i < itemEnchant.length; i++)
 			level += itemEnchant[i].getLevel();
-		level *= 2.5;
-		level = Math.round(level);
 		if(item.getCount() > 1)
 			level *= item.getCount();
+		level *= 2.5;
+		level = Math.round(level);
 		newLevel += level;
         if (newLevel > 24791) newLevel = 24791;
         player.setExperience(player.getExperience(), newLevel);
